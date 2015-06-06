@@ -36,6 +36,7 @@ class DB(object):
                 print 'login success !'
 
     def open_url(self):
+        #测试是否登陆成功
         testurl = 'http://www.douban.com'
         req = urllib2.Request(testurl)
         #req.add_header()
