@@ -10,6 +10,7 @@ def open_url(url):
     return html
 
 def get_img(html):
+    #正则表达式筛选出图片地址
     p = r'<img class="BDE_Image" src="([^"]+\.jpg)"'
     imglist = re.findall(p,html)
 
